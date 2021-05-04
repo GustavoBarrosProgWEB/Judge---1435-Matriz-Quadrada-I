@@ -13,18 +13,13 @@ public class DesafioMatrizQuadradaI {
         // Instanciaçao do objeto Scanner
         Scanner inputNM = new Scanner(System.in);
 
-        System.out.println("Digite a ordem da matriz: ");
-
         // Popular vetor com ordens das matrizes
         while (indexMtzM > 0 && indexMtzM <= 100) {
             indexMtzM = inputNM.nextInt();
             index_OrderMtzM.add(indexMtzM);
         }
 
-        System.out.println();
-
-        // Varrer o vetor passando itens para a função plotMatriz que recebe a matriz
-        // constrída da função buildMatriz
+        // Varrer o vetor passando itens para a função plotMatriz que recebe a matriz constrída da função buildMatriz
         for (int item : index_OrderMtzM) {
             plotMatriz(buildMatriz(item));
         }
@@ -77,19 +72,21 @@ public class DesafioMatrizQuadradaI {
     public static void plotMatriz(int[][] matrizM) {
 
         int itens = 0;
-        String lineBreak = "";
-
+        String form = "";
         while (itens < matrizM.length) {
             // Foreach para plotar percorrer os itens da matriz
+            int cont = 1;
             for (int item : matrizM[itens]) {
-                System.out.print(String.format("%d   ", item));
+                form = (cont < matrizM.length) ? "  %d " : "  %d";
+                System.out.print(String.format(form, item));
+                cont++;
             }
             itens++;
 
-            // Tratamento do último elemento "0"
-            lineBreak = (itens == 0) ? "0" : "\n";
+            // Quebra de linha entre as linhas da matriz
             System.out.println();
         }
-        System.out.print(lineBreak);
+        // Quebra de linha entre matrizes
+        System.out.println();
     }
 }

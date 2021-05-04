@@ -44,4 +44,3 @@ Exemplo de Entrada
 1   2   2   2   1<br>
 1   1   1   1   1<br>
 <br>
-0
