@@ -71,13 +71,12 @@ public class DesafioMatrizQuadradaI {
     // Função para plotar a matriz recebida por parâmetro
     public static void plotMatriz(int[][] matrizM) {
 
-        int itens = 0;
-        String form = "";
+        int itens = 0, cont;
         while (itens < matrizM.length) {
             // Foreach para plotar percorrer os itens da matriz
-            int cont = 1;
+            cont = 1;
             for (int item : matrizM[itens]) {
-                form = (cont < matrizM.length) ? "  %d " : "  %d";
+                String form = (cont < matrizM.length) ? "  %d " : "  %d";
                 System.out.print(String.format(form, item));
                 cont++;
             }
