@@ -25,8 +25,7 @@ Exemplo de Entrada
 
    Exemplo de Saída
 
-1
-<br> 
+1<br><br>
 1   1<br>
 1   1<br>
 <br>
@@ -44,3 +43,5 @@ Exemplo de Entrada
 1   2   3   2   1<br>
 1   2   2   2   1<br>
 1   1   1   1   1<br>
+<br>
+0
