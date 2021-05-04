@@ -29,8 +29,6 @@ public class DesafioMatrizQuadradaI {
             plotMatriz(buildMatriz(item));
         }
 
-        System.out.println(0);
-
         // Destrói o objeto criado da classe Scanner
         inputNM.close();
     }

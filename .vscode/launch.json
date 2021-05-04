@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DesafioMatrizQuadradaI",
+            "request": "launch",
+            "mainClass": "DesafioMatrizQuadradaI",
+            "projectName": "DesafioMatrizI_14499303"
+        },
+        {
+            "type": "java",
             "name": "Launch PyToJAVA",
             "request": "launch",
             "mainClass": "PyToJAVA",
